@@ -7,8 +7,17 @@ module.exports = {
     extend: {
       colors:{
         blue : "#1C76DA",
+        darkBlue: "#1762B5"
         
+      },
+      fontFamily: {
+        poppins : "Poppins",
+        anybody : "Anybody"
+      },
+      padding:{
+        ma : "450px"
       }
+      
     },
   },
   plugins: [],

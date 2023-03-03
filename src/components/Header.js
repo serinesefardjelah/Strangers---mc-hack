@@ -2,10 +2,15 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Gear from "./../media/gear_1.png" 
+import Landing from "./Landing"
+import Features  from "./Features"
+
+
 const navigation = [
 
+  {name: 'Home', href:'/', current: false},
   { name: 'Benefits', href: '#', current: false },
-  { name: 'Features', href: '#', current: false },
+  { name: 'Features', href: '/features', current: false },
   { name: 'Contact us', href: '#', current: false },
 ]
 
@@ -18,7 +23,7 @@ export default function Header() {
     <Disclosure as="nav" className="bg-white">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className=" mx-auto max-w-7xl  ">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -32,13 +37,16 @@ export default function Header() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center  sm:items-stretch sm:justify-between">
-                <div className="flex flex-shrink-0 items-center">
+                <div className="flex text-base font-bold gap-3 flex-shrink-0 items-center">
                   
                   <img
                     className="hidden h-8 w-auto lg:block"
                     src={Gear}
                     alt="Your Company"
                   />
+                  <p className='font-anybody '>
+                    Breakdown AI
+                  </p>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -71,7 +79,7 @@ export default function Header() {
                   href={item.href}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
+                    'block rounded-md px-3 py-2 text-base font-poppins'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
