@@ -3,12 +3,12 @@ import Factory from "./../media/factory.svg"
 
 export default function Landing() {
     return (
-        <div className="flex py-32 ">
+        <div className="flex py-32 lg:px-28">
         <div className="flex flex-col gap-7 ">
         <h1 className="font-bold text-2xl font-poppins "> Maximize Equipment Uptime and Optimize <span className="text-blue">Maintenance</span> with <span className="text-blue">AI-Powered</span> Predictive Analytics
         
         </h1>
-        <p className="font-poppins"> AI to predict machine breakdowns in Algeria. Stay ahead with proactive maintenance and optimized operations. Trust us to revolutionize your business.</p>
+        <p className="font-poppins"> AI & IoT algerian made solution to predict machine breakdowns. Stay ahead with proactive maintenance and optimized operations. Trust us to revolutionize your business and reduce its failure !</p>
       
 
         <div>

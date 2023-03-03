@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import Gear from "./../media/gear_1.png" 
+import Gear from "./../media/logo.png" 
 import Landing from "./Landing"
 import Features  from "./Features"
 
@@ -9,9 +9,9 @@ import Features  from "./Features"
 const navigation = [
 
   {name: 'Home', href:'/', current: false},
-  { name: 'Benefits', href: '#', current: false },
+  { name: 'Benefits', href: '/benefits', current: false },
   { name: 'Features', href: '/features', current: false },
-  { name: 'Contact us', href: '#', current: false },
+  { name: 'Contact us', href: '/contacts', current: false },
 ]
 
 function classNames(...classes) {
@@ -23,7 +23,7 @@ export default function Header() {
     <Disclosure as="nav" className="bg-white">
       {({ open }) => (
         <>
-          <div className=" mx-auto max-w-7xl  ">
+          <div className=" mx-auto max-w-7xl lg:px-28  ">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -45,7 +45,7 @@ export default function Header() {
                     alt="Your Company"
                   />
                   <p className='font-anybody '>
-                    Breakdown AI
+                    DzAIr Industry
                   </p>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
