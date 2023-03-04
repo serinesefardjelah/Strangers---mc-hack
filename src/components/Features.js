@@ -1,5 +1,5 @@
 import Screenshot1 from "./../media/screenshot2.png"
-import Screenshot2 from "./../media/screenshot1.png"
+import Screenshot2 from "./../media/screenshot3.png"
 
 
 
