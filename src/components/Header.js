@@ -44,8 +44,8 @@ export default function Header() {
                     src={Gear}
                     alt="Your Company"
                   />
-                  <p className='font-anybody '>
-                    DzAIr Industry
+                  <p className='font-anybody text-xl'>
+                    M<span className='text-blue'>AI</span>CHINA
                   </p>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
